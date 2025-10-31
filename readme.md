@@ -1,1 +1,1 @@
-Repository Jossa on kaikki Web-kehityksen tehtävät
+Repository jossa on kaikki Web-kehityksen tehtävät.
