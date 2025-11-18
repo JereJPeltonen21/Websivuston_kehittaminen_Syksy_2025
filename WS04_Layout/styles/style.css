@@ -1,6 +1,8 @@
 p,
-li {
+li,
+a {
   color: rgb(48, 119, 116);
+  text-align: center;
 }
 
 body {
@@ -9,6 +11,8 @@ body {
 
 h1 {
   font-size: 2em;
+  color: rgb(116, 102, 241);
+  text-align: center;
 }
 
 .filter-image {
@@ -24,6 +28,7 @@ h2 {
   color: rgb(116, 102, 241);
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 * {
@@ -40,10 +45,8 @@ table {
   height: 150px;
   width: 50%;
   border-collapse: collapse;
-  /*
-      margin-left: auto;
-      margin-right: auto;
-      */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 tr,
@@ -75,6 +78,10 @@ th {
   background-color: #805fe3;
 }
 
+.hidden {
+  display: none;
+}
+
 .animation-ball {
   margin-top: 15px;
   width: 50px;
@@ -83,7 +90,12 @@ th {
   background-color: white;
   border: 2px solid black;
   position: relative;
-  animation: move 2s infinite alternate;
+  animation: move 4s infinite alternate;
+}
+
+button {
+  display: block; 
+  margin: 0 auto; 
 }
 
 .square {
@@ -100,12 +112,25 @@ th {
   }
   to {
     transform: rotate(360deg);
-    left: 45%;
+    left: 90%;
   }
+}
+
+.cookie{
+  display:block;
+  text-align:center
 }
 
 .pseudo-list {
   width: 150px;
+  display: table;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+ol {
+  display: table;
+  margin: 0 auto;
 }
 
 .pseudo-list li:nth-child(odd) {
@@ -128,8 +153,60 @@ th {
   position: absolute;
   left: 0;
   top: 0;
-  color: lightgray;
 }
+
+img {
+  display: block;
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .box {
+    background-color: #805fe3;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: #8c8aea;
+    padding: 20px;
+    text-align: center;
+  }
+
+  responsive-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-box {
+      background-color: lightcoral;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .responsive-box {
+      background-color: lightseagreen;
+    }
+  }
 
 form {
   display: flex;
@@ -138,11 +215,6 @@ form {
   margin-left: 0;
   margin-right: 0;
   justify-content: center;
-  width: 50%;
-  /*
-      margin-left: auto;
-      margin-right: auto;
-      */
 }
 
 label {
