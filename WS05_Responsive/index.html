@@ -1,11 +1,124 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles/style.css"/>
     <title>WS05_Responsive</title>
-</head>
-<body>
-    <h1>WS05_Responsive</h1>
-</body>
+    <style>
+      * {
+        font-family: "Franklin Gothic Medium";
+      }
+    </style>
+    <script>
+        function hideBall() {
+            document.getElementById("ball").classList.toggle("hidden");
+        }
+    </script>
+  </head>
+  <body>
+    <header>
+    <h1>Minun Nettisivu</h1>
+    <nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="about">
+    <h1>Jere Peltonen</h1>
+    <p>
+      23 Vuotias ohjelmoija Helsingistä, jolla on unelma kehittää oma videopeli.
+    </p>
+    <img src="images/JerePeltonenKuva.jpg" height="300" width="225" alt="Jere Peltonen Kuva" class="filter-image"/>
+    <h2>Harrastuksia:</h2>
+    <ol>
+      <li>Pelaaminen</li>
+      <li>Anime</li>
+      <li>Opiskelu</li>
+    </ol>
+    <h2>Harrastuksia joita haluaisin tehdä:</h2>
+    <ul class="pseudo-list">
+      <li>Uiminen</li>
+      <li>Pyöräily</li>
+      <li>Seinäkiipeilyä</li>
+    </ul>
+    </section>
+    <div class="link">
+      <p>
+        Kiva peli joka pelaa myös itseään taustalla, kun ei pelaa aktiivisesti.
+      </p>
+      <a href="https://orteil.dashnet.org/cookieclicker/" class="cookie">Cookie Clicker</a>
+    </div>
+    <br/>
+    <table>
+      <tr>
+        <td>Websivuston Kehittaminen</td>
+        <td>Liiketoimintaympäristöt</td>
+        <td>Professional Communication in English</td>
+      </tr>
+      <tr>
+        <td>Jari Kovalainen</td>
+        <td>Petri Oikkonen</td>
+        <td>Niina Kovalainen</td>
+      </tr>
+      <tr>
+        <td>Ryhmä 2</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+    </table>
+
+    <br/>
+
+    <button class="transition-button" onclick="hideBall()">Hide Me</button>
+
+    <div class="animation-ball" id="ball">
+      <div class="square"></div>
+    </div>
+
+    <blockquote class="quote">Such site</blockquote>
+
+    <div class="flex-container" id="services">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <div class="responsive-box">Resize the window to see the effect (Workshop 4)</div>
+
+    <div class="responsive-container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>
+
+    <img src="images/Sleeping-dog.jpg" alt="Responsive Image" class="responsive-image">
+
+    <div class="media-query-box">Resize the window to see the effect (Workshop 5)</div>
+
+    <form id="contact">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"/><br/><br/>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"/><br/><br/>
+      <input type="submit" value="Submit"/>
+    </form>
+  </main>
+    <footer>
+        <p>Copyright Jere Peltonen 2025</p>
+    </footer>
+  </body>
 </html>
