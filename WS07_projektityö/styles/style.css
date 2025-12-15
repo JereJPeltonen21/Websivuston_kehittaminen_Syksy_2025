@@ -23,13 +23,18 @@ img {
   height: 200px;
   display: flex;
   justify-content: center;
+  background-image: url("../images/Japan-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .background-photo {
   background-color: red;
-  margin-left: 15%;
-  margin-right: 15%;
-  border-radius: 20px 20px 0px 0px;
+ 
 }
 
 /*Toimi NYT EN HALUA PELLEILLÄ TÄN KANSSA ILLALLA*/
@@ -78,6 +83,19 @@ ul li a.active {
   justify-content: center;
   gap: 30px;
   padding: 0 !important;
+}
+
+.title {
+  text-align: center;
+}
+
+.Star-reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.checked {
+  color: orange;
 }
 
 .email-form {
@@ -131,6 +149,10 @@ ul li a.active {
   width: 600px;
 }
 
+.self-photo img{
+  height: 200px;
+}
+
 textarea {
   height: 200px;
   width: 700px;
@@ -160,8 +182,37 @@ textarea {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border: 2px solid red;
   border-radius: 15px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
 }
 
 footer {
@@ -177,7 +228,6 @@ footer {
   
       textarea {
         width: 350px;
-        background-color: blue;
       }
 
       .text-with-photo {
@@ -187,8 +237,11 @@ footer {
       }
 
       .text-with-photo img {
-        margin-right: 0;
-        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+        height: auto;
+        float: none;
       }
 
       .container {
@@ -209,5 +262,7 @@ footer {
       ul {
         margin-left: 0;
         margin-right: 0;
+        position: sticky;
+        top: 0;
       }
 }
