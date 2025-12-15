@@ -2,14 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     /*
     border: 1px solid red;
     */
-}
-
-h1, h2, h3, p, li, form{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -31,8 +27,8 @@ img {
 
 .background-photo {
   background-color: red;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -46,8 +42,8 @@ ul {
   overflow: hidden;
   background-color: #223842;
   position: sticky;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
   top: 0;
   border-radius: 0px 0px 20px 20px;
 }
@@ -80,22 +76,59 @@ ul li a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  padding: 0 !important;
 }
 
 .email-form {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-main {
+.blogPost img {
+  width: auto;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
-  gap: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: white;
+}
+
+.container > * {
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+}
+
+.years {
+  width: 600px;
+}
+
+.explain {
+  display: flex;
+  justify-content: center;
+}
+
+.Anwers {
+  width: 600px;
+}
+
+.blogPost {
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  width: 600px;
 }
 
 textarea {
@@ -105,13 +138,15 @@ textarea {
 }
 
 .text-with-photo {
-  margin-left: 20%;
-  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .text-with-photo img{
   width: auto;
   float: left;
+  margin-right: 20px;
 }
 
 .Social-medias {
@@ -129,12 +164,13 @@ textarea {
   border-radius: 15px;
 }
 
-.fa:hover {
-  opacity: 0.5;
+footer {
+  text-align: center;
+  padding: 20px;
 }
 
-.history h1 {
-  text-align: left;
+.fa:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 730px) {
@@ -144,9 +180,20 @@ textarea {
         background-color: blue;
       }
 
-      main {
-        margin-left: 20px;
-        margin-right: 20px;
+      .text-with-photo {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .text-with-photo img {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .container {
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       .background-photo {
