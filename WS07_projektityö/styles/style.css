@@ -155,8 +155,13 @@ ul li a.active {
 
 textarea {
   height: 200px;
-  width: 700px;
   resize: none;
+}
+
+form {
+  min-width: 350px;
+  max-width: 700px;
+  width: 80vw;
 }
 
 .text-with-photo {
@@ -224,12 +229,21 @@ footer {
   opacity: 0.5;
 }
 
+input, textarea {
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1lh;
+}
+
+input[type="submit"]{
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
 @media (max-width: 730px) {
   
-      textarea {
-        width: 350px;
-      }
-
       .text-with-photo {
         flex-direction: column;
         justify-content: center;
@@ -249,14 +263,11 @@ footer {
         margin-right: 10px;
       }
 
-      .background-photo {
+      .header-photo {
+        margin-top: 0;
         margin-left: 0;
         margin-right: 0;
         border-radius: 0px;
-      }
-
-      .header-photo {
-        margin-top: 0;
       }
 
       ul {
